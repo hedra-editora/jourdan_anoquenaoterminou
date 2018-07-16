@@ -33,6 +33,10 @@
 \makeatother
 
 \makeatletter
+\newenvironment{bottompar}{\par\vspace*{\fill}}{\clearpage}
+\makeatother
+
+\makeatletter
 \newenvironment{Parskip}{%
    \par
    \parskip=0.3\baselineskip \advance\parskip by 0pt plus 2pt
