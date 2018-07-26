@@ -32,6 +32,14 @@
 \skip\footins=10mm\@plus3mm\@minus2mm
 \makeatother
 
+\makeatletter
+\newenvironment{absolutelynopagebreak}
+  {\par\nobreak\vfil\penalty0\vfilneg
+   \vtop\bgroup}
+  {\par\xdef\tpd{\the\prevdepth}\egroup
+   \prevdepth=\tpd}
+\makeatother
+
 \newcommand{\forceindent}{\leavevmode{\parindent=1,5em\indent}}
 
 \makeatletter
